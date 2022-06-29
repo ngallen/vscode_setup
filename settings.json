@@ -1,0 +1,74 @@
+{
+  "debug.openDebug": "neverOpen",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "window.restoreWindows": "one",
+  "workbench.editor.enablePreview": false,
+  "sftp.downloadWhenOpenInRemoteExplorer": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "debug.javascript.usePreview": false,
+  "editor.accessibilitySupport": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.detectIndentation": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "editor.tabSize": 2,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.trimTrailingWhitespace": true,
+  "explorer.confirmDelete": false,
+  "html.format.wrapLineLength": 0,
+  "task.problemMatchers.neverPrompt": {
+    "shell": true
+  },
+  "html.format.wrapAttributes": "preserve-aligned",
+  "workbench.hover.delay": 200,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "explorer.confirmDragAndDrop": false,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "editor.hover.delay": 200,
+
+  "diffEditor.maxComputationTime": 0,
+  "editor.rename.enablePreview": false,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "bracketPairColorizer.depreciation-notice": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "debug.console.wordWrap": false,
+  "editor.hover.above": false,
+  "editor.hover.sticky": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "git.autoRepositoryDetection": false,
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "window.zoomLevel": 0.25,
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "html.autoClosingTags": false
+}
