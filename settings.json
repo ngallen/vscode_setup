@@ -19,7 +19,7 @@
   },
   "git.confirmSync": false,
   "git.autofetch": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -70,5 +70,8 @@
   "window.zoomLevel": 0.25,
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
-  "html.autoClosingTags": false
+  "html.autoClosingTags": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+"editor.mouseWheelScrollSensitivity": 3,
+"cmake.configureOnOpen": false,
 }

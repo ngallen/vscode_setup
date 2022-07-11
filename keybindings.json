@@ -22,7 +22,7 @@
   },
 
   {
-    "key": "alt+cmd+t",
+    "key": "alt+ctrl+t",
     "command": "-workbench.action.closeOtherEditors"
   },
   {
@@ -39,12 +39,12 @@
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+.",
+    "key": "ctrl+.",
     "command": "-editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+cmd+f5",
+    "key": "shift+ctrl+f5",
     "command": "-workbench.action.debug.restart",
     "when": "inDebugMode"
   },
@@ -164,83 +164,63 @@
     "when": "inReferenceSearchEditor || referenceSearchVisible"
   },
   {
-    "key": "alt+cmd+w",
+    "key": "ctrl+alt+w",
     "command": "workbench.action.closeOtherEditors"
   },
   {
-    "key": "alt+cmd+w",
-    "command": "-toggleSearchEditorWholeWord",
-    "when": "inSearchEditor && searchInputBoxFocus"
-  },
-  {
-    "key": "alt+cmd+w",
-    "command": "-toggleFindWholeWord",
-    "when": "editorFocus"
-  },
-  {
-    "key": "alt+cmd+w",
-    "command": "-workbench.action.terminal.toggleFindWholeWord",
-    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "alt+cmd+w",
-    "command": "-toggleSearchWholeWord",
-    "when": "searchViewletFocus"
-  },
-  {
-    "key": "cmd+r",
+    "key": "ctrl+r",
     "command": "editor.action.startFindReplaceAction",
     "when": "editorFocus || editorIsOpen"
   },
   {
-    "key": "alt+cmd+f",
+    "key": "alt+ctrl+f",
     "command": "-editor.action.startFindReplaceAction",
     "when": "editorFocus || editorIsOpen"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "shift+ctrl+r",
     "command": "workbench.action.replaceInFiles"
   },
   {
-    "key": "shift+cmd+h",
+    "key": "shift+ctrl+h",
     "command": "-workbench.action.replaceInFiles"
   },
   {
-    "key": "shift+cmd+d",
+    "key": "shift+ctrl+d",
     "command": "-workbench.view.debug",
     "when": "viewContainer.workbench.view.debug.enabled"
   },
   {
-    "key": "cmd+d",
+    "key": "ctrl+d",
     "command": "-editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
   },
   {
-    "key": "cmd+r",
+    "key": "ctrl+r",
     "command": "-workbench.action.reloadWindow",
     "when": "isDevelopment"
   },
   {
-    "key": "cmd+r",
+    "key": "ctrl+r",
     "command": "-jupyter.refreshDataViewer",
     "when": "isWorkspaceTrusted && jupyter.dataViewerActive"
   },
   {
-    "key": "cmd+r",
+    "key": "ctrl+r",
     "command": "-python.refreshTensorBoard",
     "when": "python.hasActiveTensorBoardSession"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "shift+ctrl+r",
     "command": "-rerunSearchEditorSearch",
     "when": "inSearchEditor"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "shift+ctrl+r",
     "command": "-workbench.view.extension.thunder-client"
   },
   {
-    "key": "cmd+backspace",
+    "key": "ctrl+backspace",
     "command": "-workbench.action.terminal.killInstance",
     "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
   },
@@ -254,22 +234,22 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "cmd+r",
+    "key": "ctrl+r",
     "command": "workbench.action.terminal.clear",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "cmd+k",
+    "key": "ctrl+k",
     "command": "-workbench.action.terminal.clear",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "cmd+r",
+    "key": "ctrl+r",
     "command": "workbench.debug.panel.action.clearReplAction",
     "when": "inDebugRepl"
   },
   {
-    "key": "alt+cmd+e",
+    "key": "alt+ctrl+e",
     "command": "workbench.debug.action.focusRepl"
   },
   {
@@ -297,15 +277,55 @@
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "cmd+j",
+    "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
   },
   {
-    "key": "shift+cmd+w",
+    "key": "shift+ctrl+w",
     "command": "-workbench.action.closeWindow"
   },
   {
-    "key": "shift+alt+cmd+w",
+    "key": "shift+alt+ctrl+w",
     "command": "workbench.action.closeEditorsInOtherGroups"
-  }
+  },
+  {
+    "key": "alt+f",
+    "command": "workbench.action.toggleMaximizedPanel"
+},
+{
+    "key": "f7",
+    "command": "-cmake.build",
+    "when": "cmake:enableFullFeatureSet && !cmake:hideBuildCommand"
+},
+{
+    "key": "shift+f7",
+    "command": "-editor.action.wordHighlight.prev",
+    "when": "editorTextFocus && hasWordHighlights"
+},
+{
+    "key": "shift+f7",
+    "command": "-editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
+},
+{
+    "key": "shift+f7",
+    "command": "-cmake.buildWithTarget",
+    "when": "cmake:enableFullFeatureSet && !cmake:hideBuildCommand"
+},
+{
+    "key": "alt+win+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+},
+{
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+},
+{
+    "key": "alt+win+left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+},
+{
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+}
 ]
