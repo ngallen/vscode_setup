@@ -71,7 +71,31 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "html.autoClosingTags": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Cygwin",
 "editor.mouseWheelScrollSensitivity": 3,
 "cmake.configureOnOpen": false,
+"files.eol": "\n",
+"terminal.integrated.profiles.windows": {
+    "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+        "path": [
+            "${env:windir}\\Sysnative\\cmd.exe",
+            "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+        "source": "Git Bash"
+    },
+    "Cygwin": {
+        "path": "C:\\cygwin64\\bin\\bash.exe",
+        "args": [
+            "--login"
+        ]
+    }
+},
 }
