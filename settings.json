@@ -71,36 +71,33 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "html.autoClosingTags": false,
-  "terminal.integrated.defaultProfile.windows": "Cygwin",
-  // Use this to keep bash from doing a 'cd ${HOME}'
-  "terminal.integrated.env.windows": {
-    "CHERE_INVOKING": "1"
-  },
-"editor.mouseWheelScrollSensitivity": 3,
-"cmake.configureOnOpen": false,
-"files.eol": "\n",
-"terminal.integrated.profiles.windows": {
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // Use this to keep cygwin from doing a 'cd ${HOME}'
+  //   "terminal.integrated.env.windows": {
+  //     "CHERE_INVOKING": "1"
+  //   },
+  "editor.mouseWheelScrollSensitivity": 3,
+  "cmake.configureOnOpen": false,
+  "files.eol": "\n",
+  "terminal.integrated.profiles.windows": {
     "PowerShell": {
-        "source": "PowerShell",
-        "icon": "terminal-powershell"
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
     },
     "Command Prompt": {
-        "path": [
-            "${env:windir}\\Sysnative\\cmd.exe",
-            "${env:windir}\\System32\\cmd.exe"
-        ],
-        "args": [],
-        "icon": "terminal-cmd"
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
     },
     "Git Bash": {
-        "source": "Git Bash"
+      "source": "Git Bash"
     },
     "Cygwin": {
-        "path": "C:\\cygwin64\\bin\\bash.exe",
-        "args": [
-            "--login",
-            "-i"
-        ]
+      "path": "C:\\cygwin64\\bin\\bash.exe",
+      "args": ["--login", "-i"]
     }
-},
+  }
 }
