@@ -72,6 +72,10 @@
   "editor.autoClosingQuotes": "never",
   "html.autoClosingTags": false,
   "terminal.integrated.defaultProfile.windows": "Cygwin",
+  // Use this to keep bash from doing a 'cd ${HOME}'
+  "terminal.integrated.env.windows": {
+    "CHERE_INVOKING": "1"
+  },
 "editor.mouseWheelScrollSensitivity": 3,
 "cmake.configureOnOpen": false,
 "files.eol": "\n",
@@ -94,7 +98,8 @@
     "Cygwin": {
         "path": "C:\\cygwin64\\bin\\bash.exe",
         "args": [
-            "--login"
+            "--login",
+            "-i"
         ]
     }
 },
