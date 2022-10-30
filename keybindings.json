@@ -234,7 +234,7 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+shift+r",
     "command": "workbench.action.terminal.clear",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
@@ -244,7 +244,7 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+shift+r",
     "command": "workbench.debug.panel.action.clearReplAction",
     "when": "inDebugRepl"
   },
@@ -291,41 +291,104 @@
   {
     "key": "alt+f",
     "command": "workbench.action.toggleMaximizedPanel"
-},
-{
+  },
+  {
     "key": "f7",
     "command": "-cmake.build",
     "when": "cmake:enableFullFeatureSet && !cmake:hideBuildCommand"
-},
-{
+  },
+  {
     "key": "shift+f7",
     "command": "-editor.action.wordHighlight.prev",
     "when": "editorTextFocus && hasWordHighlights"
-},
-{
+  },
+  {
     "key": "shift+f7",
     "command": "-editor.action.diffReview.prev",
     "when": "isInDiffEditor"
-},
-{
+  },
+  {
     "key": "shift+f7",
     "command": "-cmake.buildWithTarget",
     "when": "cmake:enableFullFeatureSet && !cmake:hideBuildCommand"
-},
-{
+  },
+  {
     "key": "alt+win+right",
     "command": "workbench.action.moveEditorToNextGroup"
-},
-{
+  },
+  {
     "key": "ctrl+alt+right",
     "command": "-workbench.action.moveEditorToNextGroup"
-},
-{
+  },
+  {
     "key": "alt+win+left",
     "command": "workbench.action.moveEditorToPreviousGroup"
-},
-{
+  },
+  {
     "key": "ctrl+alt+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+{
+    "key": "ctrl+k ctrl+f",
+    "command": "-editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+alt+f",
+    "command": "gitlens.openWorkingFile"
+  },
+  {
+    "key": "shift+alt+.",
+    "command": "-gitlens.diffWithWorking",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+  },
+  {
+    "key": "ctrl+shift+g shift+.",
+    "command": "-gitlens.diffWithWorking",
+    "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /revision/"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "gitlens.diffWithRevisionFrom"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "sftp.sync.localToRemote"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "workbench.action.tasks.reRunTask"
+},
+{
+    "key": "ctrl+alt+a",
+    "command": "wwm.aligncode"
+},
+{
+    "key": "ctrl+alt+a",
+    "command": "auto-align.alignSelection"
+},
+{
+    "key": "alt+a",
+    "command": "editor.action.formatSelection"
 }
 ]

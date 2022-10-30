@@ -29,7 +29,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.trimTrailingWhitespace": true,
   "explorer.confirmDelete": false,
   "html.format.wrapLineLength": 0,
   "task.problemMatchers.neverPrompt": {
@@ -61,13 +60,11 @@
   "editor.hover.above": false,
   "editor.hover.sticky": false,
   "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
   "git.autoRepositoryDetection": false,
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },
   "editor.inlineSuggest.enabled": true,
-  "window.zoomLevel": 0.25,
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "html.autoClosingTags": false,
@@ -77,7 +74,6 @@
   //     "CHERE_INVOKING": "1"
   //   },
   "editor.mouseWheelScrollSensitivity": 3,
-  "cmake.configureOnOpen": false,
   "files.eol": "\n",
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
@@ -99,5 +95,37 @@
       "path": "C:\\cygwin64\\bin\\bash.exe",
       "args": ["--login", "-i"]
     }
+  },
+  "search.useIgnoreFiles": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "C_Cpp.dimInactiveRegions": false,
+  "git.suggestSmartCommit": false,
+  "cmake.preferredGenerators": ["Visual Studio 15 2017"],
+  "cmake.buildDirectory": "${workspaceFolder}/build-vs-llvm64",
+  "editor.formatOnSave": true,
+  "[cpp]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSaveMode": "modifications"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "clang-format.executable": "C:/clang-format-14.0.6.exe",
+  "C_Cpp.clang_format_style": "file",
+  "remote.SSH.remotePlatform": {
+    "vm": "linux",
+    "vm-boom-actuator-interface": "linux"
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "cmake.configureOnOpen": false,
+  "github.copilot.advanced": {
+    "length": 10
+  },
+  "terminal.integrated.scrollback": 100000,
+  "autoAlign.associations": {
+    "cpp": "{"
   }
 }
